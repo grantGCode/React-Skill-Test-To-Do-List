@@ -1,12 +1,17 @@
 import React from 'react'
 import ToDoTask from './ToDoTask'
+import { useContext} from 'react'
+import ToDoContext, { ToDoProvider } from '../context/ToDoContext'
 
 function ToDoList() {
-  return (
-    <>
-      <h2>To Do List</h2>
-      <ToDoTask />
-    </>
+
+// const ToDos = useContext(ToDoContext)
+
+  return(       
+    
+      <ToDoProvider>
+        <ToDoTask />  
+      </ToDoProvider>
   )
 }
 

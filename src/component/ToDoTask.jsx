@@ -1,12 +1,20 @@
 import React from 'react'
-import { ToDoProvider } from '../context/ToDoContext'
+import ToDoContext from '../context/ToDoContext'
+import { useContext, useEffect } from 'react'
 
 function ToDoTask() {
 
+  const {ToDos} = useContext(ToDoContext)
+ 
   return (
-    <ToDoProvider>
-        To Do Task items
-    </ToDoProvider>
+    
+    <div>
+      <ul>
+      {ToDos.map((Todo, index) => (
+      <li className="Task Complete" key={index}>{Todo.title}</li>
+      ))}
+      </ul>
+    </div>
   )
 }
 
