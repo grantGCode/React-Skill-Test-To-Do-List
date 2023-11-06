@@ -8,11 +8,11 @@ function ToDoTask() {
  
   return (
     
-    <div>
-      <ul>
-      {ToDos.map((Todo, index) => (
-      <li className="Task Complete" key={index}>{Todo.title}</li>
-      ))}
+    <div >
+      <ul className='Task-List'>
+        {ToDos.map((Todo, index) => (
+        <li className="Task Complete" key={index}>{Todo.title}</li>
+        ))}
       </ul>
     </div>
   )

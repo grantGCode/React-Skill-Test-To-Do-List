@@ -1,4 +1,6 @@
 body {
+
+  justify-content: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +13,193 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Moble view */
+
+  @media only screen and (min-width: 375px) {
+
+  /* Title of app*/
+    h2 {
+      width: auto;
+      font-size: 200%;
+      text-align: center;
+      text-shadow: 2%;
+    }
+
+  /*sks components*/
+    .Task-List{
+      margin-left: 3rem;
+      margin-right: 2.15rem;
+      text-align: center;
+      
+        padding-left: 0rem;
+    }
+
+    .Task {
+      list-style-type: none;
+      font-weight: bold;
+      font-size: .75rem;
+      border-radius: 15px;
+        width: auto;
+        
+        margin-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 2.5rem;
+        
+    }
+
+    .Task.Complete {
+      background-color: rgb(155, 216, 127);
+    }
+
+    .Task .Incomplete {
+      background-color: rgb(240, 129, 129)
+    }
+
+    } 
+
+    @media only screen and (min-width: 503px) {
+      
+      h2 {
+        width: auto;
+        font-size: 235%;
+        text-align: center;
+        text-shadow: 2%;
+      }
+
+      .Task {
+        list-style-type: none;
+        font-weight: bold;
+        border-radius: 15px;
+          width: auto;
+            margin-right: 1rem;
+            margin-top: 3rem;
+            
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+      }
+  
+
+    }
+
+    @media only screen and (min-width: 773px) {
+      
+      h2 {
+        width: auto;
+        font-size: 405%;
+        text-align: center;
+        text-shadow: 2%;
+      }
+
+      .Task {
+        list-style-type: none;
+        font-weight: bold;
+        font-size: 1.45rem;
+        border-radius: 15px;
+          width: auto;
+            margin-right: 1rem;
+            margin-top: 4rem;
+            
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+      }
+  
+
+    }
+/* Desktop View */
+  @media only screen and (min-width: 1280px) {
+
+    /* Title of app*/
+    h2 {
+      font-size: 450%;
+      text-align: center;
+      text-shadow: 2%;
+    }
+
+    /*Tasks components*/
+      .Task-List{
+        margin-left: 15rem;
+        margin-right: 13rem;
+        font-size: x-large;
+        text-align: center;
+        
+          padding-left: 0rem;
+      }
+      
+      .Task {
+        list-style-type: none;
+        font-weight: bold;
+        border-radius: 15px;
+
+          width: auto;
+            margin-right: 1rem;
+            margin-top: 3rem;
+            
+            padding-top: 1.5rem;
+            padding-bottom: 1.75rem;
+            padding-left: 2.75rem;
+            padding-right: 3rem;
+      }
+
+      .Task.Complete {
+        background-color: rgb(155, 216, 127);
+      }
+
+      .Task .Incomplete {
+        background-color: rgb(240, 129, 129)
+      }
+
+    
+  }
+
+  @media only screen and (min-width: 1440px) {
+
+    /* Title of app*/
+    h2 {
+      font-size: 550%;
+      text-align: center;
+      text-shadow: 2%;
+    }
+
+    /*Tasks components*/
+      .Task-List{
+        margin-left: 9rem;
+        margin-right: 7rem;
+        text-align: center;
+        
+          padding-left: 0rem;
+      }
+      
+      .Task {
+        list-style-type: none;
+        font-weight: bold;
+        font-size: x-large;
+        border-radius: 15px;
+
+          width: auto;
+            margin-right: 1rem;
+            margin-top: 3rem;
+            
+            padding-top: 1.5rem;
+            padding-bottom: 1.75rem;
+            padding-left: 2.75rem;
+            padding-right: 3rem;
+      }
+
+      .Task.Complete {
+        background-color: rgb(155, 216, 127);
+      }
+
+      .Task .Incomplete {
+        background-color: rgb(240, 129, 129)
+      }
+
+    
+  }

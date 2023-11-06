@@ -12,7 +12,7 @@ function App() {
 // console. log(tasks, "tasks")
   return (
     <>
-      <h2>To Do List</h2>
+      <h2 className='title'>To Do List</h2>
       <ToDoList />
     </>
   );
