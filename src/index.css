@@ -164,7 +164,7 @@ code {
         background-color: rgb(155, 216, 127);
       }
 
-      .Task .Incomplete {
+      .Task.Incomplete {
         background-color: rgb(240, 129, 129)
       }
 
@@ -218,7 +218,7 @@ code {
         background-color: rgb(155, 216, 127);
       }
 
-      .Task .Incomplete {
+      .Task.Incomplete {
         background-color: rgb(240, 129, 129)
       }
 
